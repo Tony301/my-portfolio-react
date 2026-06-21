@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="nebulaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7f5af0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00d1ff;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#nebulaGrad)"/>
+  <text x="50%" y="40%" font-size="48" fill="white" text-anchor="middle" font-weight="bold" font-family="Arial">Nebula Ranger</text>
+  <text x="50%" y="55%" font-size="20" fill="rgba(255,255,255,0.8)" text-anchor="middle" font-family="Arial">XR &amp; AR</text>
+</svg>
