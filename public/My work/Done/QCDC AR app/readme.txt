@@ -1,0 +1,1 @@
+an ar app for androis with object placement plane detection labels on off switch object anchoring size manipulation using pinch gesture placement manipulation using fingers

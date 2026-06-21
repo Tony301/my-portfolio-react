@@ -1,0 +1,1 @@
+these are some casual games that I build in my earlier days , like pong a casual ping pong game, tic tac toe with multiplayer,hexagone a game where you avoid the generated shapes by rotating, running man an endless running game ,vegetable crush kind of like candy crush
