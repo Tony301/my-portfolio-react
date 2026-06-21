@@ -181,6 +181,17 @@ main {
   border-bottom: 1px solid rgba(111, 123, 255, 0.12);
 }
 
+.panel-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top center;
+  border: 2px solid rgba(111, 123, 255, 0.35);
+  margin-bottom: 0.4rem;
+  display: block;
+}
+
 .panel-header strong {
   font-size: 0.96rem;
 }
@@ -398,6 +409,119 @@ main {
   color: #d7ddff;
   font-size: 0.9rem;
 }
+
+/* ── Video cards ─────────────────────────────────────────── */
+
+.project-image-wrapper.has-video {
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
+.project-video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  background: #000;
+}
+
+.screenshot-strip {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.6rem 1rem;
+  overflow-x: auto;
+  background: rgba(7, 10, 28, 0.6);
+  scrollbar-width: thin;
+  scrollbar-color: rgba(111, 123, 255, 0.3) transparent;
+}
+
+.screenshot-thumb {
+  flex-shrink: 0;
+  width: 60px;
+  height: 42px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: 2px solid transparent;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.screenshot-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.screenshot-thumb.active {
+  border-color: #5866ff;
+}
+
+/* ── Experience / Timeline ───────────────────────────────── */
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.timeline-item {
+  padding: 1.4rem 1.6rem;
+  border-radius: 1.25rem;
+  background: rgba(15, 19, 52, 0.92);
+  border: 1px solid rgba(111, 123, 255, 0.08);
+  border-left: 3px solid #5866ff;
+}
+
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.timeline-role {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #eef2ff;
+}
+
+.timeline-company {
+  display: block;
+  color: #8b95c8;
+  font-size: 0.88rem;
+  margin-top: 0.2rem;
+}
+
+.timeline-period {
+  flex-shrink: 0;
+  color: #00d1ff;
+  font-size: 0.82rem;
+  font-weight: 600;
+  background: rgba(0, 209, 255, 0.1);
+  padding: 0.28rem 0.75rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.timeline-bullets {
+  margin: 0;
+  padding-left: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.timeline-bullets li {
+  color: #c6ccf7;
+  font-size: 0.92rem;
+}
+
+/* ── Footer ──────────────────────────────────────────────── */
 
 .footer {
   text-align: center;

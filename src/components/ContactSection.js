@@ -7,12 +7,12 @@ export default function ContactSection({ resumeLink }) {
         <span className="section-title">Get in touch</span>
         <h2>Ready to discuss your next Unity project.</h2>
         <p>
-          I’m available for contract roles, studio reviews and technical
-          interviews. Share your goals, and I’ll show how my Unity work can
-          bring them to life.
+          Available for contract roles, studio reviews, and technical interviews.
+          Reach out and I'll show how my VR, AR, and multiplayer work can bring
+          your idea to life.
         </p>
         <div className="contact-actions">
-          <a href="mailto:your.email@example.com" className="button primary">
+          <a href="mailto:tonybera301@gmail.com" className="button primary">
             Email Me
           </a>
           <a href={resumeLink} className="button secondary" download>

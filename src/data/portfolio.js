@@ -3,93 +3,153 @@ export const resumeLink = "/resume.pdf";
 export const profileLinks = [
   {
     title: "GitHub",
-    url: "https://github.com/yourusername",
+    url: "https://github.com/Tony301",
   },
   {
     title: "LinkedIn",
-    url: "https://linkedin.com/in/yourusername",
+    url: "https://www.linkedin.com/in/tony-b-bb070911a",
   },
 ];
 
-/**
- * PROJECT STRUCTURE GUIDE
- * ======================
- * Add unlimited projects by following this structure:
- *
- * {
- *   title: "Project Name",                    // Required: Display name
- *   type: "Category (3D/2D/XR/AR/etc)",       // Required: Project type
- *   platform: "PC/Mobile/Console/etc",        // Required: Target platform
- *   description: "Short project description", // Required: Brief overview
- *   tags: ["Tech1", "Tech2"],                 // Required: Technology stack
- *   image: "/images/project-slug.svg",        // Optional: Add image to public/images/
- * }
- *
- * The layout automatically scales with more projects - uses responsive grid
- * that adapts from 1 to 4+ columns based on screen size and project count.
- */
-
 export const projects = [
   {
-    title: "Nebula Ranger",
-    type: "XR & AR",
-    platform: "Oculus Quest / Mobile",
+    title: "VR Accident Investigation",
+    type: "VR Training",
+    platform: "PC / Windows",
     description:
-      "Immersive training experience combining AR interaction with spatial audio and guided movement for professional users.",
-    tags: ["Unity", "XR", "AR Foundation", "Shader Graph"],
-    image: "/images/nebula-ranger.svg",
+      "Industrial VR simulation where users explore a scene, gather evidence objects via ray-cast or direct grab, and determine the root cause of an accident. Features real-time investigation tracking, structured evidence flow, and a quiz-based conclusion with retry system.",
+    tags: ["Unity", "VR", "XR Interaction", "C#", "Industrial Simulation"],
+    video:
+      "/My%20work/Done/VR%20Accident%20Investigation/Simbott_Test_Tony%20-%20Main%20-%20Windows%2C%20Mac%2C%20Linux%20-%20Unity%202022.3.62f2%20_DX11_%202026-04-10%2021-05-40.mp4",
   },
   {
-    title: "Aether Drift",
-    type: "3D Adventure",
-    platform: "PC",
+    title: "VR Room Viewer",
+    type: "VR Visualization",
+    platform: "PC / VR",
     description:
-      "Cinematic 3D exploration project with custom character controls, dynamic lighting, and layered world building.",
-    tags: ["Unity", "C#", "HDRP", "Cinemachine"],
-    image: "/images/aether-drift.svg",
+      "Real-estate walkthrough tool in VR with true-to-life room dimensions. Buyers can teleport through demo flats and swap furniture in real time to visualize their ideal layout before purchasing.",
+    tags: ["Unity", "VR", "Real Estate", "Furniture Customization", "C#"],
+    video: "/My%20work/Done/VR%20room%20viewer/Room%201.mp4",
   },
   {
-    title: "Pulse Core",
-    type: "2D Action",
+    title: "QCDC AR App",
+    type: "Mobile AR",
     platform: "Android",
     description:
-      "Fast-paced mobile action game with responsive input, polished VFX, and an optimized build for touch platforms.",
-    tags: ["Unity", "2D", "Mobile", "DOTS"],
-    image: "/images/pulse-core.svg",
+      "Android AR application built with AR Foundation. Supports plane detection, object placement with anchor locking, pinch-to-resize, and toggleable label overlays — all on-device with no cloud dependency.",
+    tags: ["Unity", "AR Foundation", "Android", "XR", "C#"],
+    video: "/My%20work/Done/QCDC%20AR%20app/Working%20video.mp4",
   },
   {
-    title: "Titan Workshop",
-    type: "PC Simulation",
-    platform: "Windows",
+    title: "WebGL Multiplayer Game",
+    type: "Multiplayer / Social",
+    platform: "WebGL / Browser",
     description:
-      "Realistic mechanics simulation built with custom UI, event-driven systems, and extensible game architecture.",
-    tags: ["Unity", "Editor Tools", "Systems Design", "UI/UX"],
-    image: "/images/titan-workshop.svg",
+      "Real-time multiplayer WebGL experience using Photon for networking and Firebase for authentication. Players join social rooms, chat via text and voice, customise their avatar, and interact with other users — no download required.",
+    tags: ["Unity", "WebGL", "Photon", "Firebase", "Multiplayer", "C#"],
+    video:
+      "/My%20work/Done/Webgl%20multiplayert%20game/TEST%20Unity%20WebGL%20Player%20_%20Event%20-%20Google%20Chrome%202023-05-01%2010-48-05.mp4",
+    screenshots: [
+      "/My%20work/Done/Webgl%20multiplayert%20game/Screenshot%202026-06-21%20194311.png",
+      "/My%20work/Done/Webgl%20multiplayert%20game/Screenshot%202026-06-21%20194329.png",
+      "/My%20work/Done/Webgl%20multiplayert%20game/Screenshot%202026-06-21%20194344.png",
+      "/My%20work/Done/Webgl%20multiplayert%20game/Screenshot%202026-06-21%20194357.png",
+    ],
   },
   {
-    title: "Frontier Runner",
-    type: "Android Racing",
-    platform: "Mobile",
+    title: "Web AR",
+    type: "Browser AR",
+    platform: "Web / Any Browser",
     description:
-      "Performance-focused mobile racer with touch controls, dynamic particle effects, and responsive level design.",
-    tags: ["Unity", "Mobile", "C#", "Optimization"],
-    image: "/images/frontier-runner.svg",
+      "Browser-based AR experience with no app install required. Opens directly in any modern mobile browser and overlays interactive 3D objects onto the real world using WebXR.",
+    tags: ["Unity", "WebXR", "AR", "Browser", "No-Install"],
+    video:
+      "/My%20work/Done/Web%20ar/testingAr%20by%20Tony%20Bera%20-%20Google%20Chrome%202023-05-07%2014-00-46.mp4",
   },
-
-  /**
-   * COPY ANY OBJECT ABOVE AND PASTE HERE TO ADD MORE PROJECTS
-   * The grid will automatically arrange them responsively
-   * Add up to 50+ projects - layout will remain beautiful
-   */
+  {
+    title: "Casual Games Collection",
+    type: "2D Games",
+    platform: "Mobile / PC",
+    description:
+      "A set of polished casual games built during early freelance years: Pong, Tic Tac Toe with multiplayer, Hexagone (shape-avoidance), Running Man (endless runner), and Vegetable Crush (match-3). Each shipped with clean UI and responsive controls.",
+    tags: ["Unity", "2D", "Casual", "Multiplayer", "Mobile", "C#"],
+    video: "/My%20work/Done/Some%20casual%20games%20from%20my%20earlier%20days/casual-games.mp4",
+    screenshots: [
+      "/My%20work/Done/Some%20casual%20games%20from%20my%20earlier%20days/Screenshot%202026-06-21%20194426.png",
+      "/My%20work/Done/Some%20casual%20games%20from%20my%20earlier%20days/Screenshot%202026-06-21%20194447.png",
+      "/My%20work/Done/Some%20casual%20games%20from%20my%20earlier%20days/Screenshot%202026-06-21%20194534.png",
+    ],
+  },
 ];
 
 export const skills = [
   "Unity 3D / 2D",
   "C# Development",
-  "XR / AR Interaction",
-  "Mobile & PC Builds",
-  "Shader Graph & VFX",
+  "VR Development",
+  "AR / AR Foundation",
+  "WebGL Builds",
+  "Photon Networking",
+  "UniTask & Addressables",
   "Performance Optimization",
-  "Gameplay Systems",
-  "Version Control",
+  "Level Design",
+  "Asset Management",
+];
+
+export const experience = [
+  {
+    role: "Unity Developer",
+    company: "Feast Software Pvt Ltd",
+    location: "Mumbai, India",
+    period: "Nov 2024 – Present",
+    bullets: [
+      "Developing VR-based training applications for multiple industrial use cases",
+      "Designing interactive simulations to improve user learning and engagement",
+      "Implementing optimized interaction systems for XR environments",
+    ],
+  },
+  {
+    role: "Unity Game Developer",
+    company: "Improvement Interactive",
+    location: "Remote",
+    period: "Jun 2023 – Nov 2024",
+    bullets: [
+      "Built real-time simulation systems and immersive environments in Unity",
+      "Developed procedural terrain generation and object spawning systems",
+      "Optimized async workflows using UniTask and Addressables",
+      "Integrated WebSocket-based communication for real-time features",
+    ],
+  },
+  {
+    role: "Lead Unity Developer",
+    company: "Eventcombo",
+    location: "Remote",
+    period: "Jun 2022 – Apr 2023",
+    bullets: [
+      "Led development of a web-based metaverse platform",
+      "Implemented chat systems, player interactions, and social features",
+      "Developed dynamic content systems (posters, link-based access)",
+      "Enabled real-time communication including video call features",
+    ],
+  },
+  {
+    role: "Unity XR Developer",
+    company: "Cusmat Technologies Pvt Ltd",
+    location: "Remote",
+    period: "May 2021 – Apr 2022",
+    bullets: [
+      "Developed AR/VR applications for training and simulation",
+      "Built mobile-based interactive tutorial applications",
+      "Translated client requirements into technical solutions",
+    ],
+  },
+  {
+    role: "Unity Game Developer Intern",
+    company: "Appzia Technologies Pvt Ltd",
+    location: "Pune, India",
+    period: "Feb 2021 – May 2021",
+    bullets: [
+      "Developed 2D, 3D, and VR games in a fast-paced environment",
+      "Performed testing and debugging across multiple game projects",
+    ],
+  },
 ];

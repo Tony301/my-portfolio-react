@@ -3,6 +3,7 @@ import React from "react";
 export default function Navigation() {
   const links = [
     { label: "About", href: "#about" },
+    { label: "Experience", href: "#experience" },
     { label: "Skills", href: "#skills" },
     { label: "Projects", href: "#projects" },
     { label: "Contact", href: "#contact" },
@@ -12,7 +13,7 @@ export default function Navigation() {
     <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-brand">
-          <span className="brand-title">Portfolio</span>
+          <span className="brand-title">Tony Bera</span>
         </div>
         <ul className="navbar-menu">
           {links.map((link) => (
