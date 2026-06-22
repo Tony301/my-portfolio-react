@@ -8,15 +8,18 @@ export default function ProjectCard({ project }) {
   const hasVideo = !!project.video;
   const hasScreenshots = project.screenshots && project.screenshots.length > 1;
 
+  const resolveUrl = (url) =>
+    url && (url.startsWith("http://") || url.startsWith("https://")) ? url : base + url;
+
   return (
     <article className="project-card">
       {hasVideo ? (
         <div className="project-image-wrapper has-video">
           <video
-            src={base + project.video}
+            src={resolveUrl(project.video)}
             poster={
               project.screenshots
-                ? base + project.screenshots[activeScreenshot]
+                ? resolveUrl(project.screenshots[activeScreenshot])
                 : undefined
             }
             controls
@@ -27,7 +30,7 @@ export default function ProjectCard({ project }) {
       ) : project.image && !imageError ? (
         <div className="project-image-wrapper">
           <img
-            src={base + project.image}
+            src={resolveUrl(project.image)}
             alt={project.title}
             className="project-image"
             onError={() => setImageError(true)}
@@ -48,7 +51,7 @@ export default function ProjectCard({ project }) {
               onClick={() => setActiveScreenshot(i)}
               aria-label={`Screenshot ${i + 1}`}
             >
-              <img src={base + src} alt={`${project.title} screenshot ${i + 1}`} />
+              <img src={resolveUrl(src)} alt={`${project.title} screenshot ${i + 1}`} />
             </button>
           ))}
         </div>
